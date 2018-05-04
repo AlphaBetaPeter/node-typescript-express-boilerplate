@@ -25,10 +25,3 @@ app.listen(port, () => {
 	// logger.info("NODE_ENV", process.env);
 	logger.info(`Server listening on port ${port}!`);
 });
-
-process.on("SIGINT", () => {
-	logger.info("Server received SIGINT");
-});
-process.on("SIGTERM", () => {
-	logger.info("Server received SIGTERM");
-});
