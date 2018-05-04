@@ -1,0 +1,21 @@
+{
+  "extends": ["tslint:recommended", "tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "array-type": false,
+    "indent": [true, "tabs"],
+    "interface-name": false,
+    "no-any": true,
+    "no-console": false,
+    "no-implicit-dependencies": false,
+    "quotemark": [true, "double"],
+    "semicolon": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "property-declaration",
+      "parameter",
+      "variable-declaration",
+      "member-variable-declaration"
+    ]
+  }
+}
