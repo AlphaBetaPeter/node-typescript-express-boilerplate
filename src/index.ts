@@ -2,10 +2,8 @@ import * as bodyParser from "body-parser";
 import * as config from "config";
 import * as express from "express";
 import { logger, loggerMiddleware } from "./logger";
-// tslint:disable:typedef
 
-const app = express();
-
+const app: express.Express = express();
 
 app.use(loggerMiddleware);
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -22,7 +20,7 @@ app.get("/", (req, res) => {
 	});
 });
 
-const port = config.get("app.port");
+const port: number = config.get("app.port");
 app.listen(port, () => {
 	// logger.info("NODE_ENV", process.env);
 	logger.info(`Server listening on port ${port}!`);
