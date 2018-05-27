@@ -1,10 +1,5 @@
 {
 	"app" : {
 		"port": 8080
-	},
-	"mongodb": {
-		"url": "mongodb://localhost:27017",
-		"username": "mongoroot",
-		"password": "safepassword"
 	}
 }
